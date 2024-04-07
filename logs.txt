@@ -1,0 +1,40 @@
+commit 0cf59455375752477c701c3972737e8a26a78bf2 (HEAD -> master, origin/master, origin/bug2, bug2)
+Author: Kristijan Nasev <nasevv23@gmail.com>
+Date:   Sun Apr 7 18:31:01 2024 +0200
+
+    Conflict solved Call method makeBigStringFrom will add in main class
+
+commit 362b96808ab84a8a395d27e219512a9b02124640
+Author: Kristijan Nasev <nasevv23@gmail.com>
+Date:   Sun Apr 7 18:23:08 2024 +0200
+
+    Fix wrong condition in makeBigStringFrom
+
+Author: Kristijan Nasev <nasevv23@gmail.com>
+Date:   Sun Apr 7 18:23:08 2024 +0200
+
+    Fix wrong condition in makeBigStringFrom
+
+commit b307d3d78146f233eb7af3a2a21ac53a854957fa (origin/bug1, bug1)
+Author: Kristijan Nasev <nasevv23@gmail.com>
+Date:   Sun Apr 7 18:27:47 2024 +0200
+
+    Call method filterOddLengthStrings in main class
+
+commit 83dc1ae63b42d409ce9fa431125857ac780f44ec
+Author: Kristijan Nasev <nasevv23@gmail.com>
+Date:   Sun Apr 7 18:13:32 2024 +0200
+
+    Fix wrong condition in filterOddLengthStrings
+
+commit 02b3aad1d555b64215ab67038a8ea6a0748d2033
+Author: Kristijan Nasev <nasevv23@gmail.com>
+Date:   Sun Apr 7 17:53:23 2024 +0200
+
+    Add starter code
+
+commit 19760deb8e8f64a664cf9cd140e302df26296e81
+Author: Kristijan Nasev <nasevv23@gmail.com>
+Date:   Sun Apr 7 17:18:38 2024 +0200
+
+    Initial commit

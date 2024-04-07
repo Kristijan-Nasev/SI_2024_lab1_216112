@@ -1,0 +1,125 @@
+$ cd Desktop/
+$ mkdir SI_2024_lab1_216112
+$ cd SI_2024_lab1_216112
+$ git init
+$ git remote add origin https://github.com/Kristijan-Nasev/SI_2024_lab1_216112.git
+$ nano README.md
+$ git status
+$ git add README.md
+$ git commit -m "Initial commit"
+*** Please tell me who you are
+$ git config --global user.email "nasevv23@gmail.com"
+$ git config --global user.name "Kristijan Nasev"
+$ git commit -m "Initial commit"
+$ git add *.java
+$ git commit -m "Add starter code"
+$ git push --set-upstream origin master
+$ git brunch bug1
+$ git brunch bug2
+$ git brunch
+$ git checkout bug1
+$ git brunch
+$ git status
+$ git add .
+$ git status
+$ git commit -m "Fix wrong condition in filterOddLengthStrings"
+$ git branch
+$ git checkout bug2
+$ git branch
+$ git status
+$ git add .
+$ git status
+$ git commit -m "Fix wrong condition in makeBigStringFrom"
+$ git branch
+$ git checkout bug1
+$ git branch
+$ git status
+$ git add .
+$ git status
+$ git commit -m "Call method filterOddLengthStrings in main class"
+$ git status
+$ git branch
+$ git checkout bug2
+$ git branch
+$ git status
+$ git add .
+$ git status
+$ git commit -m "Call method makeBigStringFrom in main class"
+$ git status
+$ git push --set-upstream origin bug2
+$ git branch
+$ git checkout bug1
+$ git branch
+$ git push --set-upstream origin bug1
+$ git status
+$ git checkout master
+$ git branch
+$ git push --set-upstream origin master
+$ git merge bug1
+	Fast-forward
+	SILab1Main.java | 1 +
+	SILab1_1.java   | 2 +-
+	2 files changed, 2 insertions(+), 1 deletion(-)
+Uspesno se spoija grankata bug1 so master preku Fast-forward strategijata bidejki nemase nikakvi prethodni commits na master grankata za da bi se slucil konflikt
+
+$  git push --set-upstream origin master
+$ git checkout bug2
+$ git branch
+$ git rebase master
+	Auto-merging SILab1Main.java
+	CONFLICT (content): Merge conflict in SILab1Main.java
+	error: could not apply 59a5e35... Call method makeBigStringFrom in main class
+	hint: Resolve all conflicts manually, mark them as resolved with
+	hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+	hint: You can instead skip this commit: run "git rebase --skip".
+	hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+	Could not apply 59a5e35... Call method makeBigStringFrom in main class
+
+Se sluci konflikt poradi izmenite vo SILab1Main.java
+
+$ git status 
+	interactive rebase in progress; onto b307d3d
+	Last commands done (2 commands done):
+   	pick e59159b Fix wrong condition in makeBigStringFrom
+   	pick 59a5e35 Call method makeBigStringFrom in main class
+No commands remaining.
+You are currently rebasing branch 'bug2' on 'b307d3d'.
+  	(fix conflicts and then run "git rebase --continue")
+  	(use "git rebase --skip" to skip this patch)
+  	(use "git rebase --abort" to check out the original branch)
+
+Unmerged paths:
+  	(use "git restore --staged <file>..." to unstage)
+  	(use "git add <file>..." to mark resolution)
+        	both modified:   SILab1Main.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Konfliktot go resiv na nacin sto go editirav fajlot i ja zdrzav linijata
+System.out.println(SILab1_2.makeBigStringFrom(list));
+se ostanato izbrisav i go zacuvav so Ctrl + S
+postoa vo Git gi napisav slednive komandi
+
+$ git add SiLab1Main.java
+$ git rebase --continue
+
+$ git status
+$ git checkout master
+$ git branch
+$ git merge bug2
+	Updating b307d3d..0cf5945
+	Fast-forward
+ 	SILab1Main.java | 3 ++-
+ 	SILab1_2.java   | 2 +-
+ 	2 files changed, 3 insertions(+), 2 deletions(-)
+I grankata bug2 uspesno se merge so master grankata preku Fast-forward strategijata bidejki nema konflikti 
+
+$ git push --set-upstream origin master
+$ git checkout bug2
+$ git push --set-upstream origin bug2
+$ git checkout bug1
+$ git push --set-upstream origin bug1
+$ git checkout master
+$ git log
+$ nano logs.txt
+$ git status
